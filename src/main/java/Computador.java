@@ -42,13 +42,12 @@ public class Computador {
         }
         else {
             if(this.usb.capacidade < 3) {
-                System.out.println("Acompanha " + this.usb.nome + "de " + this.usb.capacidade + "Tb");
+                System.out.println("Acompanha " + this.usb.nome + " de " + this.usb.capacidade + "Tb");
             }
             else {
-                System.out.println("Acompanha " + this.usb.nome + "de " + this.usb.capacidade + "Gb");
+                System.out.println("Acompanha " + this.usb.nome + " de " + this.usb.capacidade + "Gb");
             }
         }
-        System.out.println();
     }
 
     //adiciona a memoria usb

@@ -44,9 +44,21 @@ public class Main {
                     System.out.println("Nome do cliente: " + client.nome);
                     System.out.println("Cpf do cliente: " + client.cpf);
                     System.out.println();
-                    pc1.mostraPCConfigs();
-                    pc2.mostraPCConfigs();
-                    pc3.mostraPCConfigs();
+                    if(client.n1>0) {
+                        pc1.mostraPCConfigs();
+                        System.out.println("Quantidade comprada: " + client.n1);
+                        System.out.println();
+                    }
+                    if(client.n2>0) {
+                        pc2.mostraPCConfigs();
+                        System.out.println("Quantidade comprada: " + client.n2);
+                        System.out.println();
+                    }
+                    if(client.n3>0){
+                        pc3.mostraPCConfigs();
+                        System.out.println("Quantidade comprada: " + client.n3);
+                        System.out.println();
+                    }
                     System.out.println("Total da compra: " + client.calculaTotalCompra());
                     break;
                 default:
